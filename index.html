@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÁSM | Desenvolvedor Full-Stack</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon/icon.svg">
+    <link rel="alternate icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="alternate icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="theme-color" content="#9333ea">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="min-h-screen bg-black text-zinc-100">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-24 flex flex-col items-center justify-center min-h-screen">
+            <div class="space-y-8 text-center">
+                <!-- Logo ASM -->
+                <div class="w-64 h-24 mx-auto mb-8">
+                    <h1 class="text-8xl font-bold gradient-text tracking-widest hover:scale-105 transition-transform duration-300">
+                        ÁSM
+                    </h1>
+                </div>
+
+                <h2 class="text-5xl md:text-7xl font-bold gradient-text">
+                    Desenvolvedor Full-Stack
+                </h2>
+
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Transformando ideias em experiências digitais excepcionais através de 
+                    código limpo e design intuitivo.
+                </p>
+
+                <div class="flex gap-4 justify-center">
+                    <a href="#contato" 
+                       class="button-primary"
+                       style="text-decoration: none;">
+                        Entre em contato
+                    </a>
+                    <a href="#projetos" 
+                       class="button-secondary"
+                       style="text-decoration: none;"
+                       aria-label="Ver projetos">
+                        Ver projetos
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sobre Mim Section -->
+    <section id="sobre" class="container mx-auto px-4 py-24 bg-black mb-32">
+        <h2 class="flex items-center justify-center gap-2 mb-12">
+            <i class="bi bi-person-circle text-purple-500"></i>
+            <span class="text-3xl font-bold">Sobre Mim</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Coluna Esquerda -->
+            <div>
+                <p class="text-zinc-400 mb-8">
+                    Este é meu portfólio profissional. Sou Átila Soares Mendonça, um talentoso desenvolvedor web. Com mais de 3 anos de experiência em desenvolvimento web, especializo-me em criar soluções robustas e escaláveis usando as tecnologias mais modernas do mercado.
+                </p>
+
+                <!-- Skills Grid -->
+                <div class="grid grid-cols-2 gap-4 mb-12">
+                    <!-- Front-End -->
+                    <div class="skill-card">
+                        <h3>Front-End</h3>
+                        <p>React, Next.js, TailwindCSS, Bootstrap, JavaScript, Vite, Anime.js, Framer Motion, Git/GitHub, UX/UI...</p>
+                    </div>
+
+                    <!-- Back-End -->
+                    <div class="skill-card">
+                        <h3>Back-End</h3>
+                        <p>Node.js, Java, PostgreSQL, Firebase/Firestore, Express.js, Microsoft SQL Server, Spring Boot (Java)</p>
+                    </div>
+
+                    <!-- Salesforce -->
+                    <div class="skill-card">
+                        <h3>Salesforce</h3>
+                        <p>Apex, Visualforce, Lightning Web Components (LWC), SOQL/SOSL, Process Builder, Flow Builder, Salesforce CLI...</p>
+                    </div>
+
+                    <!-- Mecatrônica -->
+                    <div class="skill-card">
+                        <h3>Mecatrônica</h3>
+                        <p>Eletrônica aplicada, Microcontroladores e Programação(Arduino, Raspberry Pi), KUKA KRC, Sensores e Atuadores, Osciloscópios, Multímetros Digitais...</p>
+                    </div>
+                </div>
+
+                <!-- Botão Currículo com mais espaço -->
+                <div class="mt-12">
+                    <a href="Currículo Atualizado.pdf" download class="download-button">
+                        <i class="bi bi-download text-xl me-2"></i>
+                        Baixar Currículo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna Direita - Foto -->
+            <div class="profile-container">
+                <!-- ... código da foto ... -->
+                 <img src="images/profile.jpg" alt="Minha foto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Formações e Cursos Section -->
+    <section class="container mx-auto px-4 py-24 bg-black">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="flex items-center justify-center gap-2 mb-12">
+                <i class="bi bi-mortarboard-fill text-purple-500"></i>
+                <span class="text-3xl font-bold">Formações e Cursos</span>
+            </h2>
+
+            <!-- Formação Acadêmica -->
+            <div class="mb-12">
+                <h3 class="flex items-center gap-2 text-2xl font-bold mb-8">
+                    <i class="bi bi-mortarboard text-purple-500"></i>
+                    Formação Acadêmica
+                </h3>
+
+                <div class="space-y-8">
+                    <!-- Pós-Graduação -->
+                    <div class="education-item hover-card">
+                        <h4 class="text-xl font-bold mb-1">Pós-Graduação em Desenvolvimento Front-End</h4>
+                        <p class="text-zinc-400 mb-2">Faculdade Anhanguera EAD • 2024 - 2025</p>
+                        <p class="text-zinc-500">Especialização em tecnologias front-end modernas, frameworks JavaScript e desenvolvimento web avançado.</p>
+                    </div>
+
+                    <!-- Análise e Desenvolvimento -->
+                    <div class="education-item hover-card">
+                        <h4 class="text-xl font-bold mb-1">Análise e Desenvolvimento de Sistemas</h4>
+                        <p class="text-zinc-400 mb-2">Universidade Cruzeiro do Sul • 2022 - 2024</p>
+                        <p class="text-zinc-500">Desenvolvimento de software, banco de dados, programação orientada a objetos e engenharia de software.</p>
+                    </div>
+
+                    <!-- Técnico em Mecatrônica -->
+                    <div class="education-item hover-card">
+                        <h4 class="text-xl font-bold mb-1">Técnico em Mecatrônica</h4>
+                        <p class="text-zinc-400 mb-2">Senai Ítalo Bologna • 2013 - 2014</p>
+                        <p class="text-zinc-500">Automação industrial, robótica, sistemas mecânicos, eletrônica e programação de CLPs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cursos e Certificações -->
+            <div class="mt-16">
+                <h3 class="flex items-center gap-2 text-2xl font-bold mb-8">
+                    <i class="bi bi-award text-purple-500"></i>
+                    Cursos e Certificações
+                </h3>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Desenvolvimento Web Front-End -->
+                    <div class="course-card">
+                        <div class="card-header">
+                            <h4>Desenvolvimento Web Front-End</h4>
+                            <span class="year-badge">2023</span>
+                        </div>
+                        <p class="institution">Senac Goiás</p>
+                        <p class="description">Algoritmo, HTML5, CSS3, JavaScript, VueJs...</p>
+                    </div>
+
+                    <!-- React Native -->
+                    <div class="course-card">
+                        <div class="card-header">
+                            <h4>React Native</h4>
+                            <span class="year-badge">2025</span>
+                        </div>
+                        <p class="institution">Udemy</p>
+                        <p class="description">Desenvolvimento mobile, APIs RESTful, Styled Components</p>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="course-card">
+                        <div class="card-header">
+                            <h4>UI/UX Design</h4>
+                            <span class="year-badge">2025</span>
+                        </div>
+                        <p class="institution">Udemy</p>
+                        <p class="description">Design de interfaces, prototipação, Figma, experiência do usuário</p>
+                    </div>
+
+                    <!-- Administrador e Desenvolvedor Salesforce -->
+                    <div class="course-card">
+                        <div class="card-header">
+                            <h4>Administrador e Desenvolvedor Salesforce</h4>
+                            <span class="year-badge">2023</span>
+                        </div>
+                        <p class="institution">Addianto</p>
+                        <p class="description">Configuração de objetos, automação de processos, integração de sistemas e desenvolvimento em Apex</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiências Profissionais Section -->
+    <section class="container mx-auto px-4 py-24 bg-black mt-32">
+        <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+            <i class="bi bi-briefcase-fill text-purple-500"></i>
+            Experiências Profissionais
+        </h2>
+
+        <div class="max-w-4xl mx-auto space-y-6">
+            <!-- Desenvolvedor Full-Stack Júnior -->
+            <div class="experience-card">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-purple-400 text-xl font-bold">Desenvolvedor Full-Stack Júnior</h3>
+                        <p class="text-zinc-400">Freelancer</p>
+                    </div>
+                    <div class="flex items-center text-zinc-400 whitespace-nowrap">
+                        <i class="bi bi-calendar me-2"></i>
+                        Jan 2024 - Presente
+                    </div>
+                </div>
+
+                <p class="text-zinc-300 mt-4 mb-4">
+                    Liderança técnica em projetos de médio a grande escala, implementando soluções inovadoras para atender às necessidades dos clientes.
+                </p>
+
+                <ul class="text-zinc-400 space-y-2 mb-8">
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        Desenvolvimento de arquiteturas escaláveis usando microserviços, promovendo alta disponibilidade e desempenho.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        Implementação de CI/CD e práticas DevOps, otimizando os fluxos de desenvolvimento e implantação.
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        Aperfeiçoamento de performance e SEO em aplicações React, garantindo experiências rápidas e amigáveis para os usuários.
+                    </li>
+                </ul>
+
+                <div class="flex flex-wrap gap-2 mt-8">
+                    <span class="tech-badge bg-purple-900/50">React</span>
+                    <span class="tech-badge bg-blue-900/50">Node.js</span>
+                    <span class="tech-badge bg-green-900/50">AWS</span>
+                    <span class="tech-badge bg-orange-900/50">Docker</span>
+                </div>
+            </div>
+
+            <!-- Analista de Suporte Técnico -->
+            <div class="experience-card">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-purple-400 text-xl font-bold">Analista de Suporte Técnico</h3>
+                        <p class="text-zinc-400">Ideal Commerce Ltda/Blips</p>
+                    </div>
+                    <div class="flex items-center text-zinc-400 whitespace-nowrap">
+                        <i class="bi bi-calendar me-2"></i>
+                        Mar 2023 - Out 2023
+                    </div>
+                </div>
+
+                <p class="text-zinc-300 mt-4 mb-4">
+                    Atendimentos e treinamentos remotos e presenciais. Instalações de máquinas da comunicação visual, treinamentos e substituições de peças.
+                </p>
+
+                <ul class="text-zinc-400 space-y-2 mb-8">
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        Plotter de Impressão
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        Plotter de Recorte
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        CNC Router
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        Fiber Laser
+                    </li>
+                </ul>
+
+                <div class="flex flex-wrap gap-2 mt-8">
+                    <span class="tech-badge bg-purple-900/50">Instalação de Software</span>
+                    <span class="tech-badge bg-blue-900/50">Instalação de Máquinas</span>
+                    <span class="tech-badge bg-pink-900/50">Treinamentos</span>
+                    <span class="tech-badge bg-yellow-900/50">Atendimento Remoto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos em Andamento Section -->
+    <section class="container mx-auto px-4 py-24 bg-black mt-32">
+        <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+            <i class="bi bi-code-slash text-purple-500"></i>
+            Projetos em Andamento
+        </h2>
+
+        <div class="max-w-5xl mx-auto space-y-6">
+            <!-- Site Amilson & Campelo -->
+            <div class="project-card">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="status-dot bg-green-500"></span>
+                    <h3 class="text-xl font-bold">Site Amilson & Campelo</h3>
+                </div>
+
+                <p class="text-zinc-400 mb-6">
+                    Site da dupla Sertaneja Amilson & Campelo. Site totalmente moderno e profissional.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="tech-badge react">React</span>
+                    <span class="tech-badge typescript">TypeScript</span>
+                    <span class="tech-badge nextjs">Next.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge shadcn">Shadcn ui</span>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                    <span class="text-zinc-400 text-sm mt-2">90% concluído</span>
+                </div>
+            </div>
+
+            <!-- Gomuli -->
+            <div class="project-card">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="status-dot bg-yellow-500"></span>
+                    <h3 class="text-xl font-bold">Gomuli</h3>
+                </div>
+
+                <p class="text-zinc-400 mb-6">
+                    Plataforma Social Interativa entre Cantores, Compositores, Músicos instumentistas e Fãs. 
+                    Projeto totalmente Autônomo. Em Desenvolvimento: www.gomuli.com
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="tech-badge react">React</span>
+                    <span class="tech-badge nextjs">Next.js</span>
+                    <span class="tech-badge tailwind">Tailwind CSS</span>
+                    <span class="tech-badge firebase">Firebase</span>
+                    <span class="tech-badge stripe">Stripe</span>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 25%"></div>
+                    </div>
+                    <span class="text-zinc-400 text-sm mt-2">25% concluído</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos em Destaque Section -->
+    <section id="projetos" class="container mx-auto px-4 py-24 bg-black mt-32">
+        <h2 class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+            <i class="bi bi-star-fill text-purple-500"></i>
+            Projetos em Destaque
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- E-commerce Fashion -->
+            <div class="project-card">
+                <div class="project-image-wrapper bg-rose-500">
+                    <img src="images/ecommerce-project.jpg" 
+                         alt="E-commerce Fashion" 
+                         class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="text-xl font-bold mb-3">E-commerce Fashion</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Plataforma de e-commerce moderna para moda feminina com sistema de carrinho, pagamentos e gestão de produtos.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-badge react">React</span>
+                        <span class="tech-badge nodejs">Node.js</span>
+                        <span class="tech-badge tailwind">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeria de Arte Urbana -->
+            <div class="project-card">
+                <div class="project-image-wrapper bg-white">
+                    <img src="images/art-project.jpg" 
+                         alt="Galeria de Arte Urbana" 
+                         class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="text-xl font-bold mb-3">Galeria de Arte Urbana</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Plataforma para exposição e catalogação de arte urbana, com mapa interativo e informações sobre artistas.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-badge nextjs">Next.js</span>
+                        <span class="tech-badge mongodb">MongoDB</span>
+                        <span class="tech-badge mapbox">Mapbox</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portal de Fotografia -->
+            <div class="project-card">
+                <div class="project-image-wrapper bg-[#B09493]">
+                    <img src="images/fotografia-project.jpg" 
+                         alt="Portal de Fotografia" 
+                         class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="text-xl font-bold mb-3">Portal de Fotografia e Filmagens</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Sistema completo para fotógrafos e videomakers gerenciarem eventos, casamentos, aniversários e shows com galeria de fotos e vídeos.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-badge nextjs">Next.js</span>
+                        <span class="tech-badge firebase">Firebase</span>
+                        <span class="tech-badge cloudinary">Cloudinary</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vamos Conversar Section -->
+    <section id="contato" class="container mx-auto px-4 py-24 bg-black mt-16">
+        <div class="max-w-2xl mx-auto">
+            <div class="contact-card">
+                <h2 class="gradient-text text-4xl font-bold text-center mb-10">
+                    Vamos Conversar?
+                </h2>
+
+                <form class="space-y-6">
+                    <div class="form-group">
+                        <label for="name" class="text-zinc-400">Nome</label>
+                        <input type="text" 
+                               id="name"
+                               class="form-input"
+                               placeholder="Seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="text-zinc-400">Email</label>
+                        <input type="email" 
+                               id="email"
+                               class="form-input bg-zinc-800 text-zinc-500"
+                               value="atilasoaresmendonca@gmail.com"
+                               readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="text-zinc-400">Mensagem</label>
+                        <textarea id="message"
+                                  class="form-input h-40 resize-none"
+                                  placeholder="Sua mensagem"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="submit-button">
+                        Enviar mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20">
+        <!-- Linha RGB superior com as cores do site -->
+        <div class="site-colors-border-top"></div>
+        
+        <div class="container mx-auto px-4">
+            <!-- Social Links com mais espaço do topo -->
+            <div class="flex justify-center gap-6 mt-12 mb-8">
+                <a href="https://github.com/SATILAM" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   title="Visite meu perfil no GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/atila-soares-mendonca/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   title="Visite meu perfil no LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://discord.gg/coding-satilam" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   title="Entre no meu servidor Discord">
+                    <i class="bi bi-discord"></i>
+                </a>
+                <a href="https://www.youtube.com/@codingsatilam" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   title="Visite meu canal no YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/atila.s.mendonca/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-link"
+                   title="Visite meu perfil no Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Linha divisória normal -->
+            <div class="border-t border-zinc-800 my-8"></div>
+
+            <!-- Copyright -->
+            <div class="text-center text-zinc-400 mt-8">
+                <p class="mb-2">© 2024 ÁSM. Todos os direitos reservados.</p>
+                <p class="mb-2">
+                    Feito com amor e paixão por 
+                    <span class="gradient-text">Átila Soares Mendonça</span>
+                </p>
+                <p class="text-sm text-zinc-500">CNPJ: 57.736.397/0001-00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ChatBot -->
+    <div id="chatbot" class="chatbot-container">
+        <!-- Botão do WhatsApp -->
+        <button class="whatsapp-button" id="openChat" aria-label="Abrir chat do WhatsApp" title="Abrir chat do WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+            <span class="status-dot"></span>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>Chat ÁSM</h3>
+                <button class="close-chat" id="closeChat" aria-label="Fechar chat" title="Fechar chat">
+                    <i class="bi bi-x"></i> <source src="/sounds/notification.mp3" type="">
+                </button>
+            </div>
+
+            <div class="chat-content">
+                <p class="chat-message">
+                    Olá! Eu sou o assistente virtual do ASM. Como posso ajudar?
+                    Selecione um dos serviços abaixo ou digite sua mensagem.
+                </p>
+
+                <div class="service-buttons">
+                    <button class="service-btn">Desenvolvimento da Landing Page</button>
+                    <button class="service-btn">Desenvolvimento de Sites</button>
+                    <button class="service-btn">Desenvolvimento de Sistemas</button>
+                    <button class="service-btn">Desenvolvimento App</button>
+                    <button class="service-btn">Desenvolvimento E-Commerce</button>
+                    <button class="service-btn">Tráfego Pago</button>
+                    <button class="service-btn">Serviços Técnicos em Eletrônica</button>
+                    <button class="service-btn">Suporte Técnico em Informática</button>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" 
+                       placeholder="Digite sua mensagem..." 
+                       id="messageInput"
+                       class="chat-input">
+                <button class="send-button" id="sendMessage">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ScrollToTop Button -->
+    <button 
+        id="scrollToTop" 
+        class="scroll-to-top" 
+        aria-label="Voltar ao topo"
+        title="Voltar ao topo">
+        <div class="hourglass-container">
+            <i class="bi bi-hourglass"></i>
+            <span class="scroll-percentage">0%</span>
+        </div>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
