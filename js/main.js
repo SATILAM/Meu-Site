@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const percentageElement = scrollToTop.querySelector('.scroll-percentage');
     let scrollTimeout;
     
-    const WHATSAPP_NUMBER = "5562982529495";
+    const WHATSAPP_NUMBER = "5562991986868";
     
     // Pré-carregando os sons
     const messageSound = new Audio();
