@@ -9,6 +9,7 @@ body {
     font-family: system-ui, -apple-system, sans-serif;
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 /* Container */
@@ -697,6 +698,7 @@ section:not(:last-child)::after {
 
 /* Cards de Cursos */
 .course-card {
+    margin-top: 10px;
     background-color: #18181b;
     border: 1px solid #27272a;
     border-radius: 0.375rem;
@@ -787,125 +789,140 @@ section:not(:last-child)::after {
     background-color: #000;
     border: 1px solid rgba(147, 51, 234, 0.3);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
 }
 
-/* Badges de Tecnologia */
+/* Data no card */
+.experience-card .date {
+    color: #a1a1aa;
+    font-size: 0.55rem;
+    z-index: 1;
+}
+
+/* Ajuste para garantir que o card não tenha padding excessivo */
+.experience-card h3,
+.experience-card p {
+    margin-top: 0;
+}
+
+/* Tech Badges */
 .tech-badge {
-    display: inline-flex;
-    align-items: center;
     padding: 0.5rem 1rem;
-    border-radius: 9999px;
+    border-radius: 0.375rem;
     font-size: 0.875rem;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Cores específicas para cada badge */
-.bg-purple-900\/50 { background-color: rgba(88, 28, 135, 0.5); }
-.bg-blue-900\/50 { background-color: rgba(30, 58, 138, 0.5); }
-.bg-green-900\/50 { background-color: rgba(20, 83, 45, 0.5); }
-.bg-orange-900\/50 { background-color: rgba(124, 45, 18, 0.5); }
+/* Listas no experience-card */
+.experience-card ul {
+    list-style-position: inside; /* Alinha os bullets com o texto */
+    padding-left: 1rem; /* Ajusta o espaçamento esquerdo para o texto */
+    margin: 0; /* Remove margens desnecessárias */
+}
 
-/* Cores de texto */
-.text-purple-400 { color: #a78bfa; }
-.text-zinc-300 { color: #d4d4d8; }
-.text-zinc-400 { color: #a1a1aa; }
+/* Ajustes no Mobile */
+@media (max-width: 640px) {
+    .experience-card {
+        padding: 1rem; /* Reduz o padding em telas menores */
+    }
 
-/* Lista de responsabilidades */
-.space-y-2 > * + * {
-    margin-top: 0.5rem;
+    .experience-card .flex-wrap {
+        flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    }
+
+    .experience-card .date {
+        width: 100%; /* Garante que ocupe toda a linha no mobile */
+        text-align: left; /* Alinha à esquerda para dispositivos pequenos */
+        margin-top: 0.5rem; /* Adiciona espaçamento superior */
+    }
+
+    .experience-card h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte no título */
+    }
+}
+
+/* Ajustes no Desktop */
+@media (min-width: 640px) {
+    .experience-card .date {
+        margin-left: auto; /* Empurra a data para o lado direito */
+        text-align: right; /* Garante alinhamento do texto */
+        display: flex; /* Mantém os elementos alinhados */
+        align-items: center; /* Centraliza verticalmente */
+        gap: 0.5rem; /* Espaçamento entre ícone e texto */
+    }
+}
+
+/* Cores específicas das badges */
+.tech-badge.react {
+    background: #0d0c2b;
+}
+
+.tech-badge.nodejs {
+    background: #064e3b;
+}
+
+.tech-badge.treinamentos {
+    background: #24900e;
+}
+
+.tech-badge.nextjs {
+    background: #1d1e20;
+}
+
+.tech-badge.aws {
+    background: #ac7510;
+}
+
+.tech-badge.docker {
+    background: #382ee9;
+}
+
+.tech-badge.instalacaodesoftware {
+    background: #c7b54f;
+}
+
+.tech-badge.instalacaodemaquinas {
+    background: #c43c43;
+}
+
+.tech-badge.atendimentoremoto {
+    background: #c43cb2;
+}
+
+/* Projetos em Andamento */
+.project-card {
+    background: #000;
+    border: 1px solid rgba(147, 51, 234, 0.3);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .experience-card {
-        padding: 1rem;
+    .project-card {
+        padding: 1.5rem;
+        width: 100%;
+        max-width: none;
     }
 }
 
-/* Cores adicionais para os novos badges */
-.bg-pink-900\/50 { 
-    background-color: rgba(131, 24, 67, 0.5); 
-}
-
-.bg-yellow-900\/50 { 
-    background-color: rgba(113, 63, 18, 0.5); 
-}
-
-/* Ajuste no espaçamento entre cards */
-.space-y-6 > * + * {
-    margin-top: 1.5rem;
-}
-
-/* Ajuste na lista de itens */
-.space-y-2 > * + * {
-    margin-top: 0.5rem;
-}
-
-/* Mantendo consistência nos cards */
-.experience-card {
-    background-color: #000;
-    border: 1px solid rgba(147, 51, 234, 0.3);
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-/* Ajustes nos cards */
-.experience-card {
-    background-color: #000;
-    border: 1px solid rgba(147, 51, 234, 0.3);
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-/* Badges de tecnologia */
+/* Tech Badges */
 .tech-badge {
-    display: inline-flex;
-    align-items: center;
     padding: 0.5rem 1rem;
-    border-radius: 9999px;
+    border-radius: 0.375rem;
     font-size: 0.875rem;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Espaçamentos */
-.mb-6 {
-    margin-bottom: 1.5rem;
-}
-
-.mb-8 {
-    margin-bottom: 2rem;
-}
-
-.mb-10 {
-    margin-bottom: 2.5rem;
-}
-
-.mt-4 {
-    margin-top: 1rem;
-}
-
-/* Data alinhada */
-.whitespace-nowrap {
-    white-space: nowrap;
-}
-
-/* Flex container */
-.flex-1 {
-    flex: 1 1 0%;
-}
-
-/* Espaçamento entre seções */
-.mt-32 {
-    margin-top: 4rem; /* Reduzido de 8rem para 4rem */
-}
-
-/* Responsividade do espaçamento */
+/* Responsividade */
 @media (max-width: 768px) {
-    .mt-32 {
-        margin-top: 2rem;
+    .tech-badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
     }
 }
 
@@ -917,26 +934,12 @@ section:not(:last-child)::after {
     overflow: hidden;
 }
 
-.project-image-wrapper {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.project-card:hover .project-image {
-    transform: scale(1.05);
-}
-
-.project-content {
-    padding: 1.5rem;
+/* Responsividade */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 /* Tech Stack */
@@ -955,35 +958,28 @@ section:not(:last-child)::after {
 }
 
 /* Cores específicas das badges */
-.tech-badge.react {
-    background: #312e81;
+.tech-badge.figma {
+    background: #06019e;
 }
 
-.tech-badge.nodejs {
-    background: #064e3b;
+.tech-badge.uxui {
+    background: #2c5341;
 }
 
-.tech-badge.tailwind {
-    background: #0e7490;
-}
 
-.tech-badge.nextjs {
+.tech-badge.html {
     background: #1e293b;
 }
 
-.tech-badge.mongodb {
+.tech-badge.css {
     background: #15803d;
-}
-
-.tech-badge.mapbox {
-    background: #4f46e5;
 }
 
 .tech-badge.firebase {
     background: #92400e;
 }
 
-.tech-badge.cloudinary {
+.tech-badge.javascript {
     background: #6b21a8;
 }
 
@@ -1123,7 +1119,6 @@ section:not(:last-child)::after {
     border-radius: 1rem;
     padding: 2.5rem;
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -2078,5 +2073,71 @@ h3.text-2xl.font-bold.mb-8,
 @media (max-width: 640px) {
     .grid.grid-cols-2 {
         grid-template-columns: 1fr;
+    }
+} 
+
+/* Linha vertical divisória animada */
+.grid.md\:grid-cols-2::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 45%;
+    height: 80%;
+    width: 2px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        #9333ea,
+        #ec4899,
+        transparent
+    );
+    opacity: 0.3;
+    animation: lineGlow 3s ease-in-out infinite;
+    transform: translateX(50%);
+}
+
+/* Ocultar linha vertical em dispositivos móveis */
+@media (max-width: 768px) {
+    .grid.md\:grid-cols-2::after {
+        display: none; /* Oculta a linha vertical */
+    }
+}
+
+/* Responsividade para a seção Vamos Conversar */
+.contact-card::before,
+.contact-card::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    width: 2px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        #9333ea,
+        #ec4899,
+        transparent
+    );
+    opacity: 0.3;
+    animation: contactLineGlow 3s ease-in-out infinite;
+}
+
+/* Ocultar linhas na seção Vamos Conversar em dispositivos móveis */
+@media (max-width: 768px) {
+    .contact-card::before,
+    .contact-card::after {
+        display: none; /* Oculta as linhas verticais */
+    }
+} 
+
+/* Ajuste para o ícone e texto na seção Experiências Profissionais */
+.experience-card .flex {
+    gap: 0.02rem; /* Reduz o espaço entre o ícone e o texto */
+}
+
+/* Responsividade para mobile */
+@media (max-width: 640px) {
+    .experience-card .flex {
+        gap: 0.02rem; /* Ajuste adicional para mobile, se necessário */
     }
 } 
