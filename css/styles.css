@@ -1552,7 +1552,7 @@ textarea.form-input {
     background: #9333ea;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem;
     border-radius: 0.25rem;
     cursor: pointer;
 }
